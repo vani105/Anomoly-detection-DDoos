@@ -1,0 +1,31 @@
+Random Forest Accuracy Test:
+---------------------------
+Random Forest Accuracy: 0.9999114044607854
+Random Forest Precision: 0.9999611529795664
+Random Forest Recall: 0.9998834679925419
+Random Forest F1 Score: 0.9999223089771977
+
+SVM Accuracy Test:
+------------------
+SVM Accuracy: 0.9764778843385236
+SVM Precision: 0.9607945635128071
+SVM Recall: 0.9995338719701679
+SVM F1 Score: 0.979781441571793
+
+Combined Model Accuracy Test:
+----------------------------
+Combined Model Accuracy: 0.9766993731865601
+Combined Model Precision: 0.9607748003284318
+Combined Model Recall: 0.999961155997514
+Combined Model F1 Score: 0.9799763980357075
+
+Isolation Forest Model:
+----------------------
+Isolation Forest Accuracy: 0.380473543157102
+Isolation Forest Precision: 0.00044863167339614175
+Isolation Forest Recall: 3.8844002486016156e-05
+Isolation Forest F1 Score: 7.149751546133771e-05
+
+Note:
+The Isolation Forest model is not performing well, showing very low accuracy.
+Consequently, we have used the Random Forest and SVM models as a combined model for DDoS detection.

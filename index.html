@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS Detection - Upload CSV</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input[type="file"], input[type="submit"] { margin: 10px 0; padding: 10px; }
+        input[type="submit"] { background: #007bff; color: white; border: none; cursor: pointer; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>DDoS Detection System</h1>
+    <p>Upload a CSV file with the 78 CIC-IDS features (optional ' Label' column for evaluation).</p>
+    <form method="post" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file" accept=".csv" required>
+        <br>
+        <input type="submit" value="Upload and Analyze">
+    </form>
+    {% if message %}
+        <p class="error">{{ message }}</p>
+    {% endif %}
+</body>
+</html>
